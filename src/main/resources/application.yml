@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ws_server
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+rabbitmq:
+  queue:
+    name: order-queue
+  exchange:
+    name: amq.direct
+  routing:
+    key: key
+
+server:
+  port: 8081
+
